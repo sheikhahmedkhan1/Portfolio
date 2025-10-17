@@ -53,8 +53,9 @@ export default function About() {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
+          className="px-3 sm:px-1 md:px-1 lg:px-1"
         >
-          <h2 className="text-6xl font-bold mb-4 text-[#F8FAFC]">
+          <h2 className="text-6xl text-center sm:text-left md:text-left lg:text-left mx-2 font-bold mb-4 text-[#F8FAFC]">
             About <span className="text-[#1CC3BA]">Me</span>
           </h2>
           <p className="text-[#94A3B8] text-[23px] mx-2 sm:mx-2 md:mx-2 mb-4">

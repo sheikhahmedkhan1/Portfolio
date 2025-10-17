@@ -20,7 +20,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="border border-[#151D30] sm:fixed top-0 w-full z-50 transition-all backdrop-blur-[30px] supports-[backdrop-filter] duration-300">
+    <nav className="border border-[#151D30] fixed top-0 w-full z-50 transition-all backdrop-blur-[30px] supports-[backdrop-filter] duration-300">
       <div>
         <div className="relative max-w-7xl flex justify-between items-center sm:px-6 lg:px-8 mx-auto my-2 py-4">
           {/* Desktop Menu */}
@@ -65,9 +65,9 @@ export default function Navigation() {
           </div>
         </div>
 
-        <div className="mx-5">
+        <div className="overflow-hidden w-full fixed bg-[#0B111E] z-99">
           {isManuOpen && (
-            <div className="w-full  h-screen z-50">
+            <div className="w-full  backdrop-blur-[30px] supports-[backdrop-filter] h-[55vh]">
               {["Home", "About", "Projects", "Skills", "Contact"].map(
                 (item, index) => (
                   <div key={index}>

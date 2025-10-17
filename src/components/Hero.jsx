@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
-  const scrollAbout = () => {
-    const aboutElmnt = document.getElementById("about");
+  const scrollAbout = (item) => {
+    const aboutElmnt = document.getElementById(item);
     if (aboutElmnt) {
       aboutElmnt.scrollIntoView({
         behavior: "smooth", // Smooth scrol
@@ -61,12 +61,12 @@ export default function Hero() {
           className="flex gap-4 justify-center"
         >
           <button
-            onClick={scrollAbout}
+            onClick={()=>scrollAbout("about")}
             className="bg-transparent border border-[#1CC3BA] hover:bg-[#0F434D] px-8 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
           >
             Learn More
           </button>
-          <button className="border border-border-gray-500 text-primary hover:border-[#1CC3BA] hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
+          <button onClick={()=>scrollAbout("contact")} className="border border-border-gray-500 text-primary hover:border-[#1CC3BA] hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
             Contact Me
           </button>
         </motion.div>
