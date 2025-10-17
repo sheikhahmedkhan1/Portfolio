@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
-
-import { Typewriter } from "react-simple-typewriter";
-
 
 export default function About() {
   // Load theme preference
